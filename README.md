@@ -2,12 +2,12 @@
 
 ## 👥 Integrantes do Grupo
 
-- Allan Pacheco  
-- Adrian Netto  
-- Gustavo Pampu  
-- Tiago Nogueira  
+- [Adrian Netto](https://github.com/AdrianNetto)
+- [Allan Pacheco](https://github.com/allanpacheco-cmd)
+- [Gustavo Pampu](https://github.com/guleDev)
+- [Tiago Nogueira](https://github.com/TiagoGrebogi)
 
-**Professor:** Sidney
+**Professor:** [Sidney](https://github.com/sidfast)
 
 ## 📂 Repositório GitHub
 
