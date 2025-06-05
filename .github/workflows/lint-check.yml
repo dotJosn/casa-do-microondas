@@ -27,7 +27,12 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          pnpm install
+          pnpm exec biome --version
 
-      - name: Run Biome lint with auto-fix
-        run: pnpm biome lint --unsafe --write ./src
+      - name: Check directory structure
+        run: ls -la
+
+      - name: Run Biome lint
+        run: pnpm biome lint --unsafe --write .
