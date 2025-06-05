@@ -1,0 +1,31 @@
+name: Biome Lint Check
+
+on:
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  lint:
+    name: Run Biome Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Biome
+        run: npm install --save-dev @biomejs/biome
+
+      - name: Run Biome lint
+        run: npx biome lint --apply-unsafe ./src
