@@ -28,4 +28,4 @@ jobs:
         run: npm install --save-dev @biomejs/biome
 
       - name: Run Biome lint
-        run: npx biome lint --apply-unsafe ./src
+        run: pnpm biome lint --unsafe --write
