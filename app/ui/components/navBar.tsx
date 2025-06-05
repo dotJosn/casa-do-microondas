@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavBAr(props: any) {
+export default function NavBAr(props: string) {
     return (
         <nav className="bg-[#FF5926] px-8 py-5 text-white flex justify-between items-center">
             <section>
