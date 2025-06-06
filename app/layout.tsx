@@ -27,10 +27,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NavBAr
-          logo="/casa-do-microondas.svg"
+          logo="/img/casa-do-microondas.svg"
           logoAlt="casa do microondas"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           inicio="/"
           local="./localizacao"
           conserto="./conserto"

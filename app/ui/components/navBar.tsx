@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function NavBAr(props: any) {
     return (
-        <nav className="bg-[#FF5926] px-8 py-5 text-white flex justify-between items-center">
+        <nav className="bg-[#FF5926] px-8 py-4 text-white flex justify-between items-center">
             <section>
                 <Link href={props.inicio} >
                     <Image src={props.logo} alt={props.logoAlt} width={props.width} height={props.height} />
                 </Link>
             </section>
-            <ol className="list-none gap-6 flex font-bold">
+            <ol className="list-none gap-10 flex font-bold text-lg">
                 <li>
                     <Link
                         className="hover:text-[#FF0]"
