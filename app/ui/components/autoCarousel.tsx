@@ -26,8 +26,6 @@ export default function AutoCarosel(props: any) {
                     ))
                 }
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </div>
     )
