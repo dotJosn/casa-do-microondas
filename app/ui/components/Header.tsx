@@ -62,7 +62,7 @@ export default function Header() {
     <nav className="sticky top-0 z-50 bg-[#FF5926] px-4 py-5 text-white">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <Link href="/" className="hover:opacity-90 transition-opacity duration-300">
+          <Link href="/" className='transition-opacity duration-300 hover:opacity-90'>
             <Image 
               src="casa-do-microondas.svg"
               alt="Logo da empresa" 
@@ -71,10 +71,10 @@ export default function Header() {
             />
           </Link>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className='hidden items-center gap-6 md:flex'>
             <Link
               href="/"
-              className={`relative py-2 px-1 font-bold transition-all duration-500 ${
+              className={`relative px-1 py-2 font-bold transition-all duration-500 ${
                 isActive('/') ? 'text-[#FF0]' : 'hover:text-[#FF0]'
               }`}
             >
@@ -95,7 +95,7 @@ export default function Header() {
 
             <Link
               href="/localizacao"
-              className={`relative py-2 px-1 font-bold transition-all duration-500 ${
+              className={`relative px-1 py-2 font-bold transition-all duration-500 ${
                 isActive('/localizacao') ? 'text-[#FF0]' : 'hover:text-[#FF0]'
               }`}
             >
@@ -116,7 +116,7 @@ export default function Header() {
 
             <Link
               href="/conserto"
-              className={`relative py-2 px-1 font-bold transition-all duration-500 ${
+              className={`relative px-1 py-2 font-bold transition-all duration-500 ${
                 isActive('/conserto') ? 'text-[#FF0]' : 'hover:text-[#FF0]'
               }`}
             >
@@ -137,7 +137,7 @@ export default function Header() {
 
             <Link
               href="/contato"
-              className={`relative py-2 px-1 font-bold transition-all duration-500 ${
+              className={`relative px-1 py-2 font-bold transition-all duration-500 ${
                 isActive('/contato') ? 'text-[#FF0]' : 'hover:text-[#FF0]'
               }`}
             >
@@ -158,7 +158,7 @@ export default function Header() {
           </div>
 
           <motion.button 
-            className="md:hidden text-white focus:outline-none"
+            className='text-white focus:outline-none md:hidden'
             onClick={toggleMenu}
             aria-label="Menu"
             whileTap={{ scale: 0.95 }}
@@ -166,8 +166,10 @@ export default function Header() {
           >
             {isMenuOpen ? (
               <motion.svg
-                className="w-6 h-6"
+                className='h-6 w-6'
                 fill="none"
+                role="img"
+                aria-label={"Fechar menu"}
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 initial={{ rotate: 0 }}
@@ -183,8 +185,10 @@ export default function Header() {
               </motion.svg>
             ) : (
               <motion.svg
-                className="w-6 h-6"
+                className='h-6 w-6'
                 fill="none"
+                role="img"
+                aria-label={"Abrir menu"}
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 initial={{ rotate: 180 }}
@@ -205,7 +209,7 @@ export default function Header() {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="md:hidden overflow-hidden"
+              className='overflow-hidden md:hidden'
               initial="closed"
               animate="open"
               exit="closed"
@@ -215,7 +219,7 @@ export default function Header() {
                 <motion.div variants={itemVariants}>
                   <Link
                     href="/"
-                    className={`block px-3 py-2 font-bold rounded-md transition-colors duration-300 ${
+                    className={`block rounded-md px-3 py-2 font-bold transition-colors duration-300 ${
                       isActive('/') ? 'bg-[#FF0]/20 text-[#FF0]' : 'hover:bg-[#FF0]/10 hover:text-[#FF0]'
                     }`}
                   >
@@ -226,7 +230,7 @@ export default function Header() {
                 <motion.div variants={itemVariants}>
                   <Link
                     href="/localizacao"
-                    className={`block px-3 py-2 font-bold rounded-md transition-colors duration-300 ${
+                    className={`block rounded-md px-3 py-2 font-bold transition-colors duration-300 ${
                       isActive('/localizacao') ? 'bg-[#FF0]/20 text-[#FF0]' : 'hover:bg-[#FF0]/10 hover:text-[#FF0]'
                     }`}
                   >
@@ -237,7 +241,7 @@ export default function Header() {
                 <motion.div variants={itemVariants}>
                   <Link
                     href="/conserto"
-                    className={`block px-3 py-2 font-bold rounded-md transition-colors duration-300 ${
+                    className={`block rounded-md px-3 py-2 font-bold transition-colors duration-300 ${
                       isActive('/conserto') ? 'bg-[#FF0]/20 text-[#FF0]' : 'hover:bg-[#FF0]/10 hover:text-[#FF0]'
                     }`}
                   >
@@ -248,7 +252,7 @@ export default function Header() {
                 <motion.div variants={itemVariants}>
                   <Link
                     href="/contato"
-                    className={`block px-3 py-2 font-bold rounded-md transition-colors duration-300 ${
+                    className={`block rounded-md px-3 py-2 font-bold transition-colors duration-300 ${
                       isActive('/contato') ? 'bg-[#FF0]/20 text-[#FF0]' : 'hover:bg-[#FF0]/10 hover:text-[#FF0]'
                     }`}
                   >
