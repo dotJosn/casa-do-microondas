@@ -1,4 +1,3 @@
-import Head from "next/head";
 import HeroSection from "@/app/ui/components/homepage/HeroSection";
 import BrandsCarousel from "@components/homepage/BrandsCrousel";
 import ServicesSection from "@components/homepage/ServicesSection";
