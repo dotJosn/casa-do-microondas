@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${geistSans.variable} font-sans flex flex-col min-h-screen`}>
+      <body className={`${geistSans.variable} flex min-h-screen flex-col font-sans`}>
         <Header />
         <main className="flex-grow">
           {children}
