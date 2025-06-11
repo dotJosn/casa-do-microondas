@@ -1,8 +1,8 @@
-import React from 'react';
+
 
 export const BusinessHours = () => (
-  <div className="bg-white p-8 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold text-gray-800 mb-6">Horário de Atendimento</h2>
+  <div className='rounded-lg bg-white p-8 shadow-lg'>
+    <h2 className='mb-6 font-bold text-2xl text-gray-800'>Horário de Atendimento</h2>
     
     <div className="space-y-4">
       <div className="flex justify-between">
@@ -19,8 +19,8 @@ export const BusinessHours = () => (
       </div>
     </div>
 
-    <div className="mt-6 p-4 bg-[#FFF0E5] rounded-lg">
-      <p className="text-sm text-gray-700">
+    <div className='mt-6 rounded-lg bg-[#FFF0E5] p-4'>
+      <p className='text-gray-700 text-sm'>
         <span className="font-bold text-[#FF5926]">ATENÇÃO:</span> Para atendimentos emergenciais fora do horário comercial, entre em contato por telefone.
       </p>
     </div>

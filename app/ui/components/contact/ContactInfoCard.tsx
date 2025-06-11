@@ -8,12 +8,12 @@ interface ContactInfoCardProps {
 }
 
 export const ContactInfoCard = ({ icon, title, children, isPhone = false }: ContactInfoCardProps) => (
-  <div className="flex items-start mb-6">
-    <div className="bg-[#FF5926] p-3 rounded-full mr-4 flex-shrink-0">
+  <div className='mb-6 flex items-start'>
+    <div className='mr-4 flex-shrink-0 rounded-full bg-[#FF5926] p-3'>
       {icon}
     </div>
     <div>
-      <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+      <h3 className='font-semibold text-gray-800 text-lg'>{title}</h3>
       <div className="text-gray-600">
         {isPhone ? (
           React.Children.map(children, child => 

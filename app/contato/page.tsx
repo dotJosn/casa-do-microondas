@@ -17,7 +17,7 @@ export default function Contato() {
         
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className='mx-auto grid max-w-6xl gap-8 md:grid-cols-2'>
               <ContactInfoSection />
               <BusinessHours />
             </div>
